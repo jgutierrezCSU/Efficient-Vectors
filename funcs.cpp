@@ -181,8 +181,27 @@ bool isPalindrome(const vector<int> &A){
 }
 
 bool isSubarray(const vector<int> &A, const vector<int> &B){
-	
-	return false;
+	int Asize = A.size();
+    int Bsize = B.size();
+	//condition
+	if(Asize > Bsize) {
+        return false;
+    }
+
+    for(int i = 0; i < (Bsize-Asize+1); i++) {
+        bool found = true;
+
+        for(int e=0; e<Asize; e++) {
+            if(A[e] != B[i+e]) {
+                found = false;
+            }
+        }
+        if(found) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
 int partitionAround(vector<int> &A, double k){
