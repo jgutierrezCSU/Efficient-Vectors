@@ -1,0 +1,15 @@
+partitionAround
+5 23
+23 5 13 67 27
+partitionAround
+4 22.5
+27 11 54 18
+partitionAround
+20 16.5
+14	8	5	48	4	34	29	11	17	2	39	11	43	4	34	16	8	41	19	44
+partitionAround
+21 17
+14	8	5	48	4	34	29	11	17	2	39	11	43	4	34	16	8	41	19	44	50
+partitionAround
+21 17
+50  8   5   48  19   34  29  11  17  34   39  11  43  4   2  16  8   41  4  44  14

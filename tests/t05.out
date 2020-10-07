@@ -1,0 +1,10 @@
+Size of A is 10, size of B is 10, testing whether A and B are identical:
+A and B are identical.
+Size of A is 10, size of B is 10, testing whether A and B are identical:
+A and B are NOT identical.
+Size of A is 10, size of B is 8, testing whether A and B are identical:
+A and B are NOT identical.
+Size of A is 50, size of B is 50, testing whether A and B are identical:
+A and B are NOT identical.
+Size of A is 100, size of B is 100, testing whether A and B are identical:
+A and B are identical.
