@@ -13,7 +13,7 @@ using std::vector;
 using std::queue;
 using std::cerr;
 
-
+void swap(int &x, int &y);
 
 void printStat(const vector<int> &A){
 
@@ -205,8 +205,26 @@ bool isSubarray(const vector<int> &A, const vector<int> &B){
 }
 
 int partitionAround(vector<int> &A, double k){
-	
-	return -1;
+
+	int i=0,j=A.size()-1;
+	while(i<j)
+	{
+		while(A[i]<=k)
+		i++;
+
+			while(A[j]>k)
+				j--;
+
+		if(i>j)
+		break;
+
+		int temp=A[i];
+		A[i]=A[j];
+		A[j]=temp;
+	}
+return 1;
+
+
 }
 
 bool areIdenticalNotSorted(const vector<int> &A, const vector<int> &B){
@@ -217,4 +235,6 @@ bool areIdenticalNotSorted(const vector<int> &A, const vector<int> &B){
 void mergeKqueues(vector<queue<int> > &A, vector<int> &result){
 
 }
+
+
 // Jesus Gutierrez
