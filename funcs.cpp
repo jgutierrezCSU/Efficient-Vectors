@@ -229,7 +229,27 @@ return 1;
 
 bool areIdenticalNotSorted(const vector<int> &A, const vector<int> &B){
 	
-	return false;
+	int Asize = A.size();
+	int Bsize = B.size();
+	 if (Asize == Bsize) {
+        int countA, countB;
+
+        for (int i = 0; i < Asize; i++) {
+            countA = 0,
+            countB = 0;
+
+            for (int j = 0; j < Asize; j++) {
+                if (A[i] == A[j]) countA++;
+            }
+
+            for (int j = 0; j < Bsize; j++) {
+                if (A[i] == B[j]) countB++;
+            }
+            if (countA != countB) return false;
+        }
+        return true;
+    }
+    return false;
 }
 
 void mergeKqueues(vector<queue<int> > &A, vector<int> &result){
