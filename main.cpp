@@ -24,8 +24,6 @@ bool isPalindrome(const vector<int> &A);
 bool isSubarray(const vector<int> &A, const vector<int> &B);
 int partitionAround(vector<int> &A, double k);
 bool areIdenticalNotSorted(const vector<int> &A, const vector<int> &B);
-
-//Challenge problem
 void mergeKqueues(vector<queue<int> > &A, vector<int> &result);
 
 void print(const vector<int> &A){
