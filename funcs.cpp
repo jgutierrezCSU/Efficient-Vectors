@@ -15,7 +15,9 @@ using std::cerr;
 
 void swap(int &x, int &y);
 
-void printStat(const vector<int> &A){
+
+//function that finds minimun, maximum and average
+void printStat(const vector<int> &A){ // vector using pass-by-reference for saving time and space. 
 
 	int max = A[0];
 	int min =A[0];
