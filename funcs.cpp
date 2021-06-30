@@ -16,7 +16,7 @@ using std::cerr;
 void swap(int &x, int &y);
 
 
-//function that finds minimun, maximum and average
+//function that finds minimun, maximum and average from passed in vector
 void printStat(const vector<int> &A){ // vector using pass-by-reference for saving time and space. 
 
 	int max = A[0];
@@ -46,7 +46,8 @@ void printStat(const vector<int> &A){ // vector using pass-by-reference for savi
 
 
 }
-
+//From passed invector A of integers and an integer k, function  returns true if k is
+// greater than the range of integers in A. 
 bool findRange(const vector<int> &A, int k){
 
 	// for getting Min and Max
