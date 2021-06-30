@@ -77,11 +77,12 @@ bool findRange(const vector<int> &A, int k){
 
 
 }
-
+// Function scans array A ,Creates C array and uses each integer in A
+// as an index in C. Then increments the count in C
 void countOccurrences(const vector<int> &A, int k){
 
-	// Create a vector of size k with 
-    // all values as 10. 
+	
+	// C ,initilize all to 0
     vector<int> C(k,0); 
 
     int sizeOfVec = A.size();
@@ -96,18 +97,20 @@ void countOccurrences(const vector<int> &A, int k){
 	}
 	int sizeOfC=C.size();
 	for(int i = 0; i < sizeOfC; i++){
+		//if count is not 0, print the index and count
 		if (C[i] != 0){
 		cout << i<<" "<< C[i] << endl;
 		}
 
 	}
 
-
-	
-
-
 }
 
+// Function large integers and creates a smaller range for more efficincy
+// This function gets the min and max of A,
+//calculates range, range needs to be less than k
+//subtracts the min of each integer in A, stores that values as an index in C
+//once A is scanned and C is populated, adds min back to the index in C then Prints
 void countOccLarge(const vector<int> &A, int k){
 	
 	int max = A[0];
@@ -120,12 +123,12 @@ void countOccLarge(const vector<int> &A, int k){
 			{	
 				if (A[i] > max){
 					max = A[i];
-				}//get Max
+				}//get Max of A
 
 
 				if (A[i] < min){
 					min = A[i];
-				}//get Min
+				}//get Min of A
 
 
 			}//for

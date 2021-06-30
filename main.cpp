@@ -39,6 +39,7 @@ int main(){
 	while(cin >> command){
 		if(command == "printStat"){
 			int size;
+			cout << "Size: ";
 			cin >> size;
 			vector<int> A;
 			for(int i = 0; i < size; i++)
@@ -53,6 +54,7 @@ int main(){
 		}//printStat
 		else if(command == "findRange"){
 			int size, k;
+			cout << "Size followed by k: ";
 			cin >> size >> k;
 			vector<int> A;
 			for(int i = 0; i < size; i++){
@@ -69,6 +71,7 @@ int main(){
 		}//if findRange
 		else if(command == "countOccurrences"){ //countOccurrences
 			int size, k;
+			cout << "Size followed by k: ";
 			cin >> size >> k;
 			vector<int> A;
 			for(int i = 0; i < size; i++){
@@ -81,6 +84,7 @@ int main(){
 		}//if countOccurrences
 		else if(command == "countOccLarge"){
 			int size, k;
+			cout << "Size followed by k: ";	
 			cin >> size >> k;
 			vector<int> A;
 			for(int i = 0; i < size; i++){
